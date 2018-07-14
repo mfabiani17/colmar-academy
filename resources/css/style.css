@@ -2,10 +2,19 @@
   box-sizing: border-box;
 }
 
+/* Universal */
 html {
-  font-family: "Open Sans", sans-serif;
+  font-family: "Open Sans";
   font-size: 16px;
-  width: 100%;
+}
+
+body {
+  line-height: 1.2;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
 }
 
 .flex {
@@ -53,6 +62,7 @@ header nav a {
   background-color: lightgrey;
 }
 
+
 .img1{
   width: 60%;
   margin: 2rem 1.5rem;
@@ -60,9 +70,9 @@ header nav a {
 
 .text1 {
     color: #484848;
-    flex-direction: column;
+    flex-flow: column;
     justify-content: flex-start;
-    width: 40%;
+    width: 30%;
     font-family: "Poppins";
 
 }
@@ -70,23 +80,17 @@ header nav a {
 .text1 h1{
   font-size: 2.5rem;
   font-weight: 700;
-
-
 }
 
 .text1 h3{
   font-size: 1.4rem;
   font-weight: 600;
   padding-bottom: 1.5rem;
-
-
-}
-.button {
-  width: 100%;
 }
 
 
-.button a  {
+
+.button a   {
   color: white;
   background-color: #484848;
   font-size: 1rem;
@@ -99,5 +103,261 @@ header nav a {
   background-color: #333;
   color: lightgrey;
 
+}
 
+
+/* Second banner */
+
+
+.banner2{
+  display: flex;
+  background-color: #FFF;
+}
+
+.banner2 img{
+  width:100%;
+}
+
+.left {
+  width:60%;
+  margin: 2rem 1.5rem;
+}
+
+.main-title-art {
+  color:#484848;
+  font-family: "Poppins";
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-top: 2rem;
+  margin-bottom: 1.5rem;
+}
+
+.light {
+  font-family: "Roboto"; sans-serif;
+  font-size: 1rem;
+  font-weight: 300;
+  width:80%;
+  margin-bottom: 2rem;
+}
+
+.by {
+  font-family: Helvetica; sans-serif;
+  font-weight: 300;
+  margin-bottom:0px;
+}
+
+
+.right{
+  width: 40%;
+  flex-direction: column;
+}
+
+.top-box {
+  display: flex;
+  border: 0.5px solid lightgrey;
+}
+
+.top-box:hover{
+  background-color: lightgrey;
+}
+
+.img-container{
+  width:35%;
+  height:auto;
+  margin: 1rem;
+}
+
+.small-top {
+  width:65%;
+  flex-direction: column;
+  justify-content: center;
+}
+
+
+.small-top p{
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+
+.small-top a {
+  color: #1EA2F9;
+  text-decoration: none;
+}
+
+.small-top a:hover{
+  color: red;
+
+
+}
+.light-title{
+  font-family: "Roboto"; sans-serif;
+  font-size: 1rem;
+  font-weight: 300;
+}
+
+.title{
+  font-family: "Poppins";
+  font-size: 1.4rem;
+  font-weight: 500;
+
+}
+
+.special {
+  background-color: lightgrey;
+}
+
+/* Third Banner */
+
+.banner3{
+  flex-direction: column;
+  background-color: lightgrey;
+}
+
+.main-title {
+  color:#484848;
+  font-family: "Poppins";
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin: 2rem 0 0 0;
+  text-align: center;
+}
+
+
+.courses{
+  display: flex;
+  flex-flow: row wrap;
+  padding: 0 4.5rem;
+}
+
+.info {
+  width: 30%;
+  display: flex;
+  flex-flow: column;
+  margin: 2rem auto;
+  padding-bottom: 1rem;
+  background-color: whitesmoke;
+  transition-duration: .5s;
+}
+
+.info .img-info-container img{
+  width: 100%;
+  height:auto;
+}
+
+.info:hover{
+  background-color: lightblue;
+}
+
+.info h3{
+  color: #484848;
+  font-family: "Poppins";
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin: 1rem 1rem;
+}
+
+.info p {
+  color: #484848;
+  margin: 0.5rem 1rem ;
+}
+
+/* Video Section */
+.banner4{
+  background-color: #FFF;
+}
+
+.thesis-container{
+  display: flex;
+}
+
+.banner4 h1{
+  color:#484848;
+  font-family: "Poppins";
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin: 2rem 0 0 0;
+  text-align: center;
+}
+
+.mainvideo {
+  display: flex;
+  flex-flow: column;
+  width: 60%;
+}
+
+
+.left-container{
+  max-width: 60%;
+  margin: 2rem 1.5rem;
+}
+
+.left-text-2{
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 2rem;
+
+}
+
+.vid-container video {
+  width: 100%;
+}
+
+.video-title{
+  color:#484848;
+  font-family: "Poppins";
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-top: 1.5rem;
+  margin-bottom: 0rem;
+
+}
+
+.right-container{
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    width: 40%;
+    margin: 2rem 0rem;
+}
+
+.box {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: auto;
+}
+
+.box img {
+  width: 35%;
+  height: auto;
+  margin: 1rem 1rem;
+}
+
+.text-descr{
+  width:65%;
+}
+
+.box:hover {
+  background-color: lightgrey;
+}
+
+footer {
+  border-top: 0.5px solid lightgrey;
+  justify-content: space-between;
+  padding: 1rem 1.5rem 1rem 1.5rem;
+
+}
+
+footer nav a {
+  padding-left: 1rem;
+}
+
+footer nav a:hover{
+  color:red;
+}
+
+.footer-text{
+font-family: "Roboto"; sans-serif;
+font-size: 1rem;
+font-weight: 300;
 }
