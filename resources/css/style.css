@@ -62,7 +62,6 @@ header nav a {
   background-color: lightgrey;
 }
 
-
 .img1{
   width: 60%;
   margin: 2rem 1.5rem;
@@ -74,7 +73,6 @@ header nav a {
     justify-content: flex-start;
     width: 30%;
     font-family: "Poppins";
-
 }
 
 .text1 h1{
@@ -88,9 +86,7 @@ header nav a {
   padding-bottom: 1.5rem;
 }
 
-
-
-.button a   {
+.button a {
   color: white;
   background-color: #484848;
   font-size: 1rem;
@@ -102,25 +98,56 @@ header nav a {
 .button a:hover {
   background-color: #333;
   color: lightgrey;
-
 }
-
 
 /* Second banner */
 
-
-.banner2{
+.banner2 {
   display: flex;
   background-color: #FFF;
 }
 
-.banner2 img{
-  width:100%;
+.left-container {
+  max-width: 60%;
+  margin: 2rem 1.5rem;
 }
 
-.left {
-  width:60%;
-  margin: 2rem 1.5rem;
+.left-text-2 {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 2rem;
+}
+.right-container{
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    width: 40%;
+    margin: 2rem 0rem;
+}
+
+.box {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: auto;
+}
+
+.box img {
+  width: 35%;
+  height: auto;
+  margin: 1rem 1rem;
+}
+
+.text-descr{
+  width:65%;
+}
+
+.box:hover {
+  background-color: lightgrey;
+}
+
+.img-container img{
+  width:100%;
 }
 
 .main-title-art {
@@ -146,48 +173,6 @@ header nav a {
   margin-bottom:0px;
 }
 
-
-.right{
-  width: 40%;
-  flex-direction: column;
-}
-
-.top-box {
-  display: flex;
-  border: 0.5px solid lightgrey;
-}
-
-.top-box:hover{
-  background-color: lightgrey;
-}
-
-.img-container{
-  width:35%;
-  height:auto;
-  margin: 1rem;
-}
-
-.small-top {
-  width:65%;
-  flex-direction: column;
-  justify-content: center;
-}
-
-
-.small-top p{
-  padding-top: 0.5rem;
-  padding-bottom: 0.5rem;
-}
-
-.small-top a {
-  color: #1EA2F9;
-  text-decoration: none;
-}
-
-.small-top a:hover{
-  color: red;
-
-
 }
 .light-title{
   font-family: "Roboto"; sans-serif;
@@ -199,11 +184,14 @@ header nav a {
   font-family: "Poppins";
   font-size: 1.4rem;
   font-weight: 500;
-
 }
 
 .special {
   background-color: lightgrey;
+}
+
+.border {
+  border:0.5px solid lightgrey;
 }
 
 /* Third Banner */
@@ -213,7 +201,7 @@ header nav a {
   background-color: lightgrey;
 }
 
-.main-title {
+.banner3 h1{
   color:#484848;
   font-family: "Poppins";
   font-size: 2.5rem;
@@ -221,7 +209,6 @@ header nav a {
   margin: 2rem 0 0 0;
   text-align: center;
 }
-
 
 .courses{
   display: flex;
@@ -262,6 +249,7 @@ header nav a {
 }
 
 /* Video Section */
+
 .banner4{
   background-color: #FFF;
 }
@@ -285,19 +273,6 @@ header nav a {
   width: 60%;
 }
 
-
-.left-container{
-  max-width: 60%;
-  margin: 2rem 1.5rem;
-}
-
-.left-text-2{
-    display: flex;
-    flex-direction: column;
-    padding-bottom: 2rem;
-
-}
-
 .vid-container video {
   width: 100%;
 }
@@ -309,43 +284,12 @@ header nav a {
   font-weight: 700;
   margin-top: 1.5rem;
   margin-bottom: 0rem;
-
-}
-
-.right-container{
-    display: flex;
-    flex-direction: column;
-    height: auto;
-    width: 40%;
-    margin: 2rem 0rem;
-}
-
-.box {
-  display: flex;
-  align-items: center;
-  width: 100%;
-  height: auto;
-}
-
-.box img {
-  width: 35%;
-  height: auto;
-  margin: 1rem 1rem;
-}
-
-.text-descr{
-  width:65%;
-}
-
-.box:hover {
-  background-color: lightgrey;
 }
 
 footer {
   border-top: 0.5px solid lightgrey;
   justify-content: space-between;
   padding: 1rem 1.5rem 1rem 1.5rem;
-
 }
 
 footer nav a {
