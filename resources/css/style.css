@@ -31,7 +31,7 @@ header {
 
 header nav a {
   color: #484848;
-  border-radius: 1.5rem;
+  border-radius: 1rem;
   text-decoration: none;
   padding: 0 0.5rem;
   transition: all 0.5s ease;
@@ -58,7 +58,7 @@ header nav a:hover{
   font-weight: 400;
 }
 
-.mobile {
+.mobile{
   display:none;
 }
 
@@ -88,13 +88,6 @@ header nav a:hover{
   padding-bottom: 1.5rem;
 }
 
-@media (max-width:931px){
-  .button a{
-    display: flex;
-    width: 10%;
-  }
-}
-
 .button a {
   color: white;
   background-color: #484848;
@@ -107,6 +100,7 @@ header nav a:hover{
 .button a:hover {
   background-color: #333;
   color: lightgrey;
+  transition: all 0.5s ease;
 }
 
 /* Second banner */
@@ -116,7 +110,7 @@ header nav a:hover{
   background-color: #FFF;
 }
 
-.left-container {
+.left-container, .left-container-video {
   max-width: 60%;
   margin: 2rem 1.5rem;
 }
@@ -126,7 +120,8 @@ header nav a:hover{
     flex-direction: column;
     padding-bottom: 2rem;
 }
-.right-container{
+
+.right-container, .right-container-video {
     display: flex;
     flex-direction: column;
     height: auto;
@@ -139,6 +134,11 @@ header nav a:hover{
   align-items: center;
   width: 100%;
   height: auto;
+  transition: all 0.5s ease;
+}
+
+.img-mobile {
+  display: none;
 }
 
 .box img {
@@ -151,8 +151,16 @@ header nav a:hover{
   width:65%;
 }
 
+.blue {
+  color: #4286f4
+}
+
+.blue:hover {
+  color: red;
+}
+
 .box:hover {
-  background-color: lightgrey;
+  background-color: lightblue;
 }
 
 .img-container img{
@@ -173,6 +181,14 @@ header nav a:hover{
   font-size: 1rem;
   font-weight: 300;
   width:80%;
+  margin-bottom: 2rem;
+}
+
+.light2 {
+  font-family: "Roboto"; sans-serif;
+  font-size: 1rem;
+  font-weight: 300;
+  width:7rem;
   margin-bottom: 2rem;
 }
 
@@ -276,14 +292,13 @@ header nav a:hover{
   text-align: center;
 }
 
-.mainvideo {
-  display: flex;
-  flex-flow: column;
-  width: 60%;
-}
-
 .vid-container video {
   width: 100%;
+}
+
+.vid-container video:hover {
+  opacity: 0.8;
+  transition: all 0.5s ease;
 }
 
 .video-title{
@@ -314,3 +329,182 @@ font-family: "Roboto"; sans-serif;
 font-size: 1rem;
 font-weight: 300;
 }
+
+/* Media Query for tablet/phone */
+
+@media (max-width:931px){
+  .button a{
+    display: flex;
+    margin-bottom: 2rem;
+  }
+}
+
+@media (max-width:768px){
+
+  /* Navbar Mobile */
+  .mobile {
+      display: flex;
+      width: 100%;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+  .mobile a:hover {
+    opacity: 0.2;
+}
+
+   .logo {
+    display: none;
+  }
+
+  header .navbar {
+      display: none;
+    }
+  /* END Navbar Mobile */
+
+  .banner1{
+    flex-direction: column;
+  }
+
+  .banner1 img {
+    width: 100%;
+    height: auto;
+    margin-top:0rem;
+  }
+
+  .text1 {
+    width: 90%;
+    flex-direction: column;
+    align-items: center;
+    text-align: left;
+    left: 0;
+    width: 90%;
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
+
+  .text1 h1 {
+    margin-top: 0;
+  }
+
+  .text1 h3 {
+    padding-bottom: 0;
+  }
+
+    .left-container {
+      display: none;
+  }
+
+    .right-container{
+      width: 100%;
+  }
+
+    .box {
+     flex-direction: column;
+
+  }
+
+    .box .img-desktop {
+      display: none;
+}
+
+    .box .img-mobile {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      margin: 0 auto;
+  }
+
+    .text-descr {
+      width: 100%;
+      margin-left: 2rem;
+  }
+
+    .title {
+      margin-bottom: 1rem;
+  }
+
+    .light{
+      margin:0.5rem 0 1rem 0 ;
+  }
+
+    .blue{
+      margin-bottom: 2rem;
+  }
+
+    .button a{
+      display: flex;
+      max-width: 100%;
+      padding: 1rem 6rem ;
+  }
+
+    .banner3 {
+      background-color: #FFF;
+      padding-bottom: 2rem;
+      border-bottom: 0.5px solid lightgrey;
+  }
+
+    .banner3 h1 {
+       margin-top:0rem;
+       margin-bottom: 1rem;
+  }
+
+    .img-info-container {
+      display: none;
+  }
+
+    .courses {
+      padding: 0;
+  }
+
+    .info {
+      width: 100%;
+      display: flex;
+      flex-flow: column;
+      margin: 0.5rem 0  0.5rem  0;
+      padding-bottom: 0;
+      background-color: whitesmoke;
+      transition-duration: .5s;
+  }
+
+    .info h3 {
+      text-align: center;
+      font-size: 1.5rem;
+      font-weight: 600;
+      margin: 1rem 1rem;
+  }
+
+    .type, .descr {
+      display: none;
+  }
+
+    .banner4 {
+      flex-direction: column
+  }
+
+    .banner4 video {
+      width: 100%;
+      height: auto;
+      margin-top:0rem;
+  }
+
+    .left-container-video {
+      max-width: 100%;
+      margin: 1rem 0 2rem 0;
+  }
+
+    .right-container-video {
+      display: none;
+  }
+
+    .left-text-2 {
+      display: none;
+  }
+
+    footer {
+      justify-content: center;
+  }
+
+    footer nav {
+      display: none;
+  }
