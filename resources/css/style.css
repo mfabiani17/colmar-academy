@@ -38,7 +38,8 @@ header nav a {
 }
 
 header nav a:hover{
-  color: red;
+  color: #0090ab;
+  opacity: 0.5;
 }
 
 .logo {
@@ -98,8 +99,9 @@ header nav a:hover{
 }
 
 .button a:hover {
-  background-color: #333;
-  color: lightgrey;
+  background-color: lightblue;
+  color: #333;
+  border: 0.5px solid #333;
   transition: all 0.5s ease;
 }
 
@@ -152,7 +154,7 @@ header nav a:hover{
 }
 
 .blue {
-  color: #4286f4
+  color: #0090ab;
 }
 
 .blue:hover {
@@ -321,7 +323,8 @@ footer nav a {
 }
 
 footer nav a:hover{
-  color:red;
+  color: #0090ab;
+  opacity: 0.5;
 }
 
 .footer-text{
